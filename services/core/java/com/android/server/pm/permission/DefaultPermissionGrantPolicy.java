@@ -472,6 +472,9 @@ public final class DefaultPermissionGrantPolicy {
                 getDefaultProviderAuthorityPackage("downloads", userId), userId,
                 STORAGE_PERMISSIONS);
 
+        // Lawnchair
+        grantSystemFixedPermissionsToSystemPackage("ch.deletescape.lawnchair.ci", userId, STORAGE_PERMISSIONS);
+
         // Downloads UI
         grantSystemFixedPermissionsToSystemPackage(
                 getDefaultSystemHandlerActivityPackage(
